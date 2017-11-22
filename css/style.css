@@ -1,0 +1,120 @@
+
+h1 {
+    margin: 0;
+}
+
+p {
+    padding-bottom: 0.25em;
+    padding-top: 0.25em;
+    margin: 0;
+}
+
+.myContainer {
+    display: flex;
+}
+
+.myText {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+    margin-top: -0.5em;
+}
+
+@media (min-width: 768px) {
+    .mySection {
+        display: flex;
+    }
+
+    .myPhoto {
+        height: 256px;
+        /*width: 260px;*/
+    }
+
+    .myImg {
+        height: auto;
+        max-height: 128px;
+        width: 128px;
+        /*margin-left: auto;
+        margin-right: auto;*/
+        padding-bottom: 1em;
+    }
+
+    .myImgSmall {
+        height: 4em;
+        width: auto;
+        /*    margin-left: auto;
+            margin-right: auto;
+            */
+    }
+}
+
+@media (max-width: 767px) {
+    .mySection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .myPhoto {
+        height: 256px;
+        /*width: 256px;*/
+        /*margin-left: auto;
+        margin-right: auto;*/
+        padding-bottom: 1em;
+    }
+
+    .myImg {
+        height: auto;
+        max-height: 192px;
+        width: 192px;
+        /*margin-left: auto;
+        margin-right: auto;*/
+        padding-bottom: 1em;
+    }
+
+    .myImgSmall {
+        height: 4em;
+        width: auto;
+        /*margin-left: auto;
+        margin-right: auto;*/
+        padding-bottom: 1em;
+    }
+}
+
+.myThumbnail {
+    height: 125px;
+    width: 125px;
+}
+
+.paperContainer {
+    font-family: 'Open Sans Light', sans-serif;
+    margin-bottom: 1em;
+}
+
+.paperTitle {
+    font-weight: bold;
+}
+
+.paperPeople {
+    padding-left: 2em;
+}
+
+.paperVenue {
+    font-weight: 100;
+    padding-left: 2em;
+}
+
+.paperAward {
+    font-weight: bold;
+    background: lightblue;
+    padding-left: 2em;
+}
+
+.paperTweet {
+    display: none;
+}
+
+.paperSummary {
+    display: none;
+    padding-left: 2em;
+}

@@ -1,0 +1,12 @@
+/* Unit editable CSS */
+
+/** Unit Bar background color **/
+#ubc7-unit {
+   background: #2F5D7C; /* For White on Blue, and Grey on White */
+   /* background: #002145; */ /* For Blue on White, and White on Grey */
+}
+
+/** Social Icons **/
+#ubc7-unit-social-icons i {
+    color: #002145;
+}

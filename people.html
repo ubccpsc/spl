@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7]>
+<html class="iem7 oldie" lang="en"><![endif]-->
+<!--[if (IE 7)&!(IEMobile)]>
+<html class="ie7 oldie" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]>
+<html class="ie8 oldie" lang="en"><![endif]-->
+<!--[if (IE 9)&!(IEMobile)]>
+<html class="ie9" lang="en"><![endif]-->
+<!--[[if (gt IE 9)|(gt IEMobile 7)]><!-->
+<html lang="en"><!--<![endif]-->
+<!--
+ * UBC CLF (Common Look and Feel) v7.0.4
+ * Copyright 2012-2013 The University of British Columbia
+ * UBC Communications and Marketing
+ * http://brand.ubc.ca/clf
+ */
+-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Software Practices Lab - Department of Computer Science - UBC</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description"
+          content="Software Practices Lab - University of British Columbia Department of Computer Science">
+    <meta name="author" content="Reid Holmes">
+    <!-- Stylesheets -->
+    <link href="//cdn.ubc.ca/clf/7.0.4/css/ubc-clf-full.min.css" rel="stylesheet">
+    <link href="css/unit.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!--[if lte IE 7]>
+    <link href="//cdn.ubc.ca/clf/7.0.4/css/font-awesome-ie7.css" rel="stylesheet">
+    <![endif]-->
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="//cdn.ubc.ca/clf/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="//cdn.ubc.ca/clf/7.0.4/img/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144"
+          href="//cdn.ubc.ca/clf/7.0.4/img/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114"
+          href="//cdn.ubc.ca/clf/7.0.4/img/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72"
+          href="//cdn.ubc.ca/clf/7.0.4/img/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="//cdn.ubc.ca/clf/7.0.4/img/apple-touch-icon-57-precomposed.png">
+</head>
+<body>
+<div class="container">
+    <!-- UBC Global Utility Menu -->
+    <!--
+            <div class="collapse expand" id="ubc7-global-menu">
+                <div id="ubc7-search" class="expand">
+                    <div id="ubc7-search-box">
+                        <form class="form-search" method="get" action="http://www.ubc.ca/search/refine/" role="search">
+                            <input type="text" name="q" placeholder="Search this website" class="input-xlarge search-query">
+                            <input type="hidden" name="label" value="Search UBC" />
+                            <input type="hidden" name="site" value="*.ubc.ca" />
+                            <button type="submit" class="btn">Search</button>
+                        </form>
+                    </div>
+                </div>
+                <div id="ubc7-global-header" class="expand">
+                </div>
+            </div>
+    -->
+    <!-- End of UBC Global Utility Menu -->
+    <!-- UBC Header -->
+    <header id="ubc7-header" class="row-fluid expand" role="banner">
+        <div class="span1">
+            <div id="ubc7-logo">
+                <a href="http://www.ubc.ca">The University of British Columbia</a>
+            </div>
+        </div>
+        <div class="span2">
+            <div id="ubc7-apom">
+                <a href="//cdn.ubc.ca/clf/ref/aplaceofmind">UBC - A Place of Mind</a>
+            </div>
+        </div>
+        <div class="span9" id="ubc7-wordmark-block">
+            <div id="ubc7-wordmark">
+                <a href="http://www.ubc.ca">The University of British Columbia</a>
+                <!-- <span class="ubc7-campus" style="width: 240px; color: white;">Department of Computer Science</span>-->
+            </div>
+            <!--
+                            <div id="ubc7-global-utility">
+                                <button type="button" data-toggle="collapse" data-target="#ubc7-global-menu"><span>UBC Search</span></button>
+                                <noscript><a id="ubc7-global-utility-no-script" href="http://www.ubc.ca/">UBC Search</a></noscript>
+                            </div>
+            -->
+        </div>
+    </header>
+    <!-- End of UBC Header -->
+    <!-- UBC Unit Identifier -->
+    <div id="ubc7-unit" class="row-fluid expand">
+        <div class="span12">
+            <!-- Mobile Menu Icon -->
+            <div class="navbar">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target="#ubc7-unit-navigation">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+            </div>
+            <!-- Read more about Unit Name Treatment on http://brand.ubc.ca/clf -->
+            <!-- No Faculty Treatment --><!--<div id="ubc7-unit-name" class="ubc7-single-element"> -->
+            <div id="ubc7-unit-name">
+                <a href="/"><span id="ubc7-unit-faculty">Computer Science</span><span id="ubc7-unit-identifier">Software Practices Lab</span></a>
+            </div>
+        </div>
+    </div>
+    <!-- End of UBC Unit Identifier -->
+    <!-- UBC Unit Navigation -->
+    <div id="ubc7-unit-menu" class="navbar expand" role="navigation">
+        <div class="navbar-inner expand">
+            <div class="container">
+                <div class="nav-collapse collapse" id="ubc7-unit-navigation">
+                    <ul class="nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active"><a href="people.html">People</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                    </ul>
+                </div><!-- /.nav-collapse -->
+            </div>
+        </div><!-- /navbar-inner -->
+    </div><!-- /navbar -->
+    <!-- End of UBC Unit Navigation -->
+    <!-- UBC Unit Breadcrumbs -->
+    <ul class="breadcrumb expand">
+        <li>
+            <a href="https://cs.ubc.ca/">Computer Science</a> <span class="divider">/</span>
+        </li>
+        <li>
+            <a href="index.html">Software Practices Lab</a> <span class="divider">/</span>
+        </li>
+        <li class="active">People</li>
+    </ul>
+    <!-- End of UBC Unit Breadcrumbs -->
+    <!-- Content Area -->
+    <div class="content expand" role="main">
+
+        <!-- CONTENT -->
+        <!-- CONTENT -->
+        <!-- CONTENT -->
+        <!-- CONTENT -->
+        <!-- CONTENT -->
+        <!-- CONTENT -->
+
+        <h1>People</h1>
+
+        <h2>Current Faculty</h2>
+
+        <h3>Gail Murphy</h3>
+        <div class="mySection">
+            <img class="myImg" src="img/head_gail.jpg" alt="Gail Murphy"/>
+            <div class="myText">
+                <p>
+                    Gail is a full professor and the founder of the lab. She is also the <a
+                        href="https://research.ubc.ca/">Vice-President Research & Innovation</a> for UBC and a
+                    co-founder and Director at <a href="https://www.tasktop.com/">Tasktop Technologies</a>.
+                </p>
+                <p>
+                    Gail's research interests are in software engineering with a particular interest in improving the
+                    productivity of knowledge workers, including software developers. Her group develops tools to aid
+                    with the evolution of large software systems and performs empirical studies to better understand how
+                    developers work and how software is developed.
+                </p>
+                <p>
+                    More details about Gail's research can be found on her <a href="https://blogs.ubc.ca/gailcmurphy/">home
+                    page</a>.
+                </p>
+            </div>
+        </div>
+
+        <h3>Reid Holmes</h3>
+        <div class="mySection">
+            <img class="myImg" src="img/head_reid.jpg" alt="Reid Holmes"/>
+            <div class="myText">
+                <p>
+                    Reid is an Associate Professor in the lab. He is broadly interested in the problems software
+                    engineers encounter as they create and evolve
+                    software systems. His research mostly involves finding novel techniques to make it easier for
+                    software developers to quickly, and correctly, evolve their software systems.
+                </p>
+                <p>
+                    Reid's work has spanned many different domains including recommendation systems, software reuse,
+                    source code documentation, software testing, and software development environments.
+                </p>
+                <p>
+                    More details about Reid's research can be found on his <a href="https://www.cs.ubc.ca/~rtholmes/">home
+                    page</a>.
+                </p>
+            </div>
+        </div>
+
+        <h2>Affiliate Faculty</h2>
+
+        <h3>Thomas Fritz</h3>
+        <div class="mySection">
+            <img class="myImg" src="img/head_thomas.jpg" alt="thomas fritz"/>
+            <div class="myText">
+                <p>
+                    Thomas am an Associate Professor in the Department of Informatics at the University of Zurich. <!-- and an Adjunct Professor in the Department of Computer Science at University of British Columbia. -->
+                </p>
+                <p>
+                    In his research, he focuses on empirically studying software developers and on using personal and biometric data to improve software developers' productivity. By better understanding what software developers need, what they experience, and how they operate on a daily basis, we will be able to provide better and more tailored support to developers as well as improve their productivity and the quality of the software they produce. In particular, Thomas is interested in three areas: developer productivity, biometric sensing and information needs.
+                    Thopmas works with over 20 international companies, including ABB, Microsoft, and IBM. This research was featured in several media, including the New Yorker, the Wall Street Journal, and the New Scientist.
+                </p>
+                <!--<p>
+                    Before joining UBC, I was an assistant professor at the University of Zurich, Switzerland. I received myPhD from UBC and my Diplom from the Ludwig-Maximilians-University Munich, Germany.
+                </p>-->
+                <p>
+                    More details can be found on my personal <a href="http://www.cs.ubc.ca/~fritz/">UBC home page</a> and my <a href="http://www.ifi.uzh.ch/en/seal/people/fritz.html">UZH home page</a>
+                </p>
+            </div>
+        </div>
+
+
+        <h2>Current Members</h2>
+
+        <h3>Giovanni Viviani (Ph.D. student)</h3>
+        <div class="mySection">
+            <img class="myImg" src="img/head_giovanni.jpg" alt="giovanni"/>
+            <div class="myText">
+                <p>
+                    Giovanni is the longest serving PhD student in the lab. To be honest, no-one quite remembers when he showed up, and we're all too afraid to ask when he'll leave, but one thing is for sure: he definetly loves black clothes.
+                </p>
+                <p>
+                    More details can be found on Giovanni's personal <a href="https://asdf.com">home page</a>.
+                </p>
+            </div>
+        </div>
+
+        <h3>Quinn Hanam (Ph.D. student)</h3>
+        <div class="mySection">
+            <img class="myImg" src="img/head_quinn.jpg" alt="quinn"/>
+            <div class="myText">
+                <p>
+                    Quinn's research is at the intersection of human factors, static program analysis and machine learning. Specifically, he helps developers gain insight into how code changes affect program behaviour by investigating (1) what information developers need and how to present that information during code review, and (2) how program analysis tools can leverage large datasets of source code changes to automatically learn relevant information.
+                </p>
+                <p>
+                    More details can be found on Quinn's <a href="http://ece.ubc.ca/~qhanam/">home page</a>.
+                </p>
+            </div>
+        </div>
+
+        <h3>Daniel Almeida (Ph.D. student)</h3>
+        <div class="mySection">
+            <img class="myImg" src="img/head_daniel.jpg" alt="Daniel Almeida"/>
+            <div class="myText">
+                <p>
+                    Daniel is a software developer and researcher in training (aka Ph.D. Student). His interests include software design and evolution, empirical software engineering, and human aspects of software engineering.
+                </p>
+                <p>
+                    He spends his days making and drinking the elixir of life (that would be coffee, of course), reading/writing papers, and coding. His goal is to identify, understand, and solve problems that come between software developers and great work being done.
+                </p>
+                <p>
+                    More details can be found on Daniel's personal <a target="_blank" href="http://danielalmeida.me">home page</a>.
+                </p>
+            </div>
+        </div>
+
+        <h3>Arthur Marques (Ph.D. student)</h3>
+        <div class="mySection">
+            <img class="myImg" src="img/head_arthur.jpg" alt="Arthur Marques"/>
+            <div class="myText">
+                <p>
+                    Arthur is a Ph.D. student in the lab. His research interests include software engineering, software testing, and software evolution. He is currently interested in identifying/mapping knowledge snippets spread throughout software artifacts).
+                </p>
+                <p>
+                    More details can be found on Giovanni's personal <a href="https://marquesarthur.github.io/">home page</a>.
+                </p>
+            </div>
+        </div>
+
+        <h3>Nico Ritschel (Ph.D. student)</h3>
+        <div class="mySection">
+            <img class="myImg" src="img/head_nico.jpg" alt="nico"/>
+            <div class="myText">
+                <p>
+                    Nico is a Ph.D. student that is co-supervised by Reid Holmes and Ron Garcia, doing research that is on the brink of Software Engineering and Programming Languages like static analysis, program transformations and type systems. He is both interested in the theoretical aspects that lay the foundation for these topics, as well as the impact they have on developers when applied in their toolchain.
+                </p>
+            </div>
+        </div>
+
+        <h3>Nick Bradley (M.Sc. student)</h3>
+        <div class="mySection">
+            <img class="myImg" src="img/head_nick.jpg" alt="Nick Bradley"/>
+            <div class="myText">
+                <p>
+                    Nick is a graduate student in the lab. He is interested in understanding developer workflows and how they can be made more natural to interact with. His Master's thesis examines the role of conversational agents in software engineering.
+                </p>
+                <p>
+                    Code and data related to his personal and research projects can be found on his <a href="https://nickbradley.github.io/">GitHub</a> page.
+                </p>
+            </div>
+        </div>
+
+        <h3>Rodrigo Araújo (M.Sc. student)</h3>
+        <div class="mySection">
+            <img class="myImg" src="img/head_rodrigo.jpg" alt="rodrigo"/>
+            <div class="myText">
+                <p>
+                  Rodrigo is a graduate student at UBC. He is interested in the intersection of machine learning, software systems, and software engineering, and how they can fit together to build and evolve self-adaptive systems that can change, heal, and optimize in real time in order to make engineers more productive and systems more reliable.
+                </p>
+                <p>
+                  More details can be found on Rodrigo's personal <a href="www.rodrigoaraujo.me">home page</a>.
+                </p>
+            </div>
+        </div>
+
+        <h3>Felix Grund (M.Sc. student)</h3>
+        <div class="mySection">
+            <img class="myImg" src="img/head_felix.jpg" alt="felix"/>
+            <div class="myText">
+                <p>
+                    Felix is currently aiming for a Master of Computer Science at the lab. He is currently focusing on supporting software developers in the process of assessing quality of existing software modules. He has a general passion for Web technology with a few years of industry experience in the field.
+                </p>
+            </div>
+        </div>
+
+        <h3>Xinhong (Sam) Liu (M.Sc. student)</h3>
+        <div class="mySection">
+            <img class="myImg" src="img/head_sam.jpg" alt="sam"/>
+            <div class="myText">
+                <p>
+                    Sam is a graduate student in the lab. More details can be found on his personal <a href="http://nestederror.com">website</a>.
+                </p>
+            </div>
+        </div>
+
+        <h3>Lucas Zamprogno (Undergraduate researcher)</h3>
+        <div class="mySection">
+            <img class="myImg" src="img/head_lucas.jpg" alt="lucas"/>
+            <div class="myText">
+                <p>
+                    Lucas is an undergraduate student in the lab who is working on improving our understanding of how industrial developers actually <i>perform</i> code review. He is doing this by bringing biometric sensing into the code review setting to understand how developers reason about the patches they are reviewing.
+                </p>
+                <p>
+                    More details can be found on Lucas' personal <a href="XXX">home page</a>.
+                </p>
+            </div>
+        </div>
+
+        <h2>Past Members</h2>
+
+        <h3>Postdoctoral Researchers</h3>
+        <ul>
+            <li>Neil Ernst (SEI)</li>
+            <li><a href="http://www.ifi.uzh.ch/en/seal/people/fritz.html">Thomas Fritz (Assistant Professor, University of Zurich)</a></li>
+            <li><a href="http://sel.ist.osaka-u.ac.jp/people/ishio/">Takashi Ishio (Assistant Professor, Osaka University)</a></li>
+            <li>Adrian Kuhn (Airbnb)</li>
+            <li><a href="http://people.engr.ncsu.edu/ermurph3/">Emerson Murphy-Hill (Associate Professor, NC State University)</a></li>
+            <li><a href="http://www.cs.ubc.ca/~selonen/">Petri Selonen (Principal Researcher, Nokia Research)</a></li>
+            <li><a href="http://www.cs.ubc.ca/~dshepher/Dr.%20David%20Shepherd/Home/Home.html">David Shepherd (Tasktop -&gt; ABB)</a></li>
+        </ul>
+        <h3>Graduate Students</h3>
+        <p>SPL has had many wonderful students participate in the lab. Below are some with their first affiliation after
+            graduation when known. If you are missing from this list or want your entry updated, just drop <a
+                    href="https://cs.ubc.ca/~rtholmes">Reid</a> an email!</p>
+        <ul>
+            <!-- NOTE: alphabetical(ish) listing by last name -->
+            <li><a href="http://manumitting.com/">Brian de Alwis (Post-doc, U. Saskatchwan)</a></li>
+            <li><a href="http://directory.uleth.ca/users/john.anvik">John Anvik (Assistant Professor, University of Lethbridge)</a></li>
+            <li><a href="http://web.archive.org/web/20110807074422/http://www.cs.ubc.ca/~pviriya/">Petcharat (Apple) Viriyakattiyaporn</a></li>
+            <li><a href="http://jenniferbaldwin.info/">Jennifer Baldwin (University of Victoria)</a></li>
+            <li><a href="https://www.cs.ubc.ca/people/elisa-baniassad">Elisa Baniassad</a> (Instructor, University of British Columbia)</li>
+            <li><a href="http://www.cs.ubc.ca/~awjb/">Alex Bradley</a>&nbsp;(<a href="http://www.cohodata.com/">Coho Data</a>)</li>
+            <li><a href="http://www.snarky.ca/">Brett Cannon (Google)</a></li>
+            <li>Rick Chern (MDA)</li>
+            <li><a href="http://webhome.cs.uvic.ca/~ycoady/">Yvonne Coady (Associate Professor, University of Victoria)</a></li>
+            <li>Wesley Coelho (Tasktop)</li>
+            <li><a href="http://cubranic.freeshell.org/">Davor Cubranic (SAP Business Objects)</a></li>
+            <li>Sam Davis (Tasktop)</li>
+            <li><a href="http://www.cs.usask.ca/~cjd032/">Chris Dutchyn (Associate Professor, University of Saskatchewan)</a></li>
+            <li><a href="http://www.cs.ubc.ca/~ade/">Andrew Eisenberg (SpringSource)</a></li>
+            <li>Sara Forghanizadeh</li>
+            <li><a href="http://www.ifi.uzh.ch/en/seal/people/fritz.html">Thomas Fritz (Assistant Professor, U. Zurich)</a></li>
+            <li>Steve Gao (Blast Radius)</li>
+            <li><a href="http://www.cs.ubc.ca/~rmgolbec/">Ryan Golbeck (Science Teaching and Learning Fellow, University of British Columbia)</a></li>
+            <li>Stephan Gudmundson</li>
+            <li><a href="https://janhannemann.wordpress.com/">Jan Hannemann (Head of System Design, German National Library)</a></li>
+            <li>Lyndon Hiew</li>
+            <li><a href="http://www.cs.ubc.ca/~rtholmes/">Reid Holmes (Associate Professor, University of British Columbia)</a></li>
+            <li><a href="http://www.cs.ubc.ca/~tyehon/">Terry Hon</a></li>
+            <li>Doug Janzen (Indicee)</li>
+            <li><a href="https://about.me/mik.kersten">Mik Kersten (CEO and co-founder, Tasktop Technologies)</a></li>
+            <li>Albert Lai (McKesson Medical Imaging Group)</li>
+            <li>Gene Lee (Walt Disney Animation)</li>
+            <li>Lloyd Markle</li>
+            <li><a href="http://www.christophermatthews.ca/">Chris Matthews (University of Victoria)</a></li>
+            <li>Ed McCormick</li>
+            <li>Ivan Minevskiy (SAP)</li>
+            <li>Shawn Minto (Tasktop)</li>
+            <li>Clint Morgan (Tasktop)</li>
+            <li>Immad Naseer</li>
+            <li>Jingwen (Owen) Ou (Elastic Path)</li>
+            <li>Raji Rajagopalan (Microsoft)</li>
+            <li><a href="www.cs.mcgill.ca/~martin/">Martin Robillard (Professor, McGill University)</a></li>
+            <li><a href="http://www.izzetsafer.com/">Izzet Safer (IBM Toronto Software Lab)</a></li>
+            <li><a href="http://people.ucalgary.ca/~sillito/">Jonathan Sillito (Assistant Professor, University of Calgary -> Amazon)</a></li>
+            <li>Arjun Singh</li>
+            <li>Navjot Singh (Oblong Industries)</li>
+            <li>Robin Salkeld</li>
+            <li><a href="http://webfoot.com/ducky.home.php">Ducky Sherwood (Atimi Software)</a></li>
+            <li><a href="http://web.archive.org/web/20110519153703/http://sites.google.com/site/nsawadsky/">Nick Sawadsky</a>&nbsp;(Software Engineer, Optemo)</li>
+            <li><a href="https://c.albert-thompson.com/">C. Albert Thompson</a></li>
+            <li>Maria Tkatchenko (Ciena)</li>
+            <li><a href="http://www.cpsc.ucalgary.ca/~rwalker">Robert Walker (Associate Professor, University of Calgary)</a></li>
+            <li><a href="http://www.cs.ubc.ca/~lintonye/">Linton (Lingdong) Ye</a></li>
+            <li><a href="http://annieying.ca/">Annie Ying (IBM Research / Ph.D. at McGill University)</a></li>
+            <li>Trevor Young (EnStream)</li>
+            <li><a href="http://www.cs.ubc.ca/~ericazhj/">Jun Zhang</a></li>
+        </ul>
+        <h3>Undergraduate Students</h3>
+        <p>SPL has also welcomed many undergraduate students for Honours Theses, undergraduate directed studies, summer
+            research projects, cooperative work terms and more. Here are some of the students who have participated in
+            the lab.</p>
+        <p>Eric Booth, Harinder Brar, Avi Bryant, Andrew Catton, Andrew Chan, Danita Cheng, Denise Choi, Wesley Coelho,
+            Joseph Collins-Unruh, Mirela Cukovic, Tanya Ellchuk, Taivo Evard, Thomas Fritz, Shauna Gammon, Nathan Hapke,
+            Thad Heinrichs, Anson Ho, Reid Holmes, Harold Hsu, Katherine Irvine, Tom Jarecki, Mik Kersten, Dominika
+            Lacka, Alan Lai, Albert Lai, Ciaran Llachlan Leavitt, Leo Lee, Nick Lee, Robert Lee, Cynthia Lim, Lindsay
+            Mason, Tracy Mew, Shawn Minto, Kenneth Mui, Robin Newhouse, Jerilyn Ning, Leo Ping, Winnie Poon, Tanja
+            Radeka, Robert Rekrutiak, Ekaternia Saenko, Jeff Steinbok, Derek Shimoza, Jonathan Stiansen, Ken Sueda, Erin
+            Takeshita, Kimberely Tee, Matthew Theobald, Cristina Teodoropol, Neil Thomas, Kaili Vesik, James Williams,
+            Dave Wilson, Albert Wong, Annie Ying, Jason Xu</p>
+        <h3>Visitors</h3>
+        <ul>
+            <li>Manabu Kamimura (Fujitsu)</li>
+            <li><a href="http://sites.ecomp.uefs.br/roberto/">Roberto Bittencourt (Federal University of Campina Grande,
+                Brazil)</a></li>
+            <li><a href="http://wiki.dcc.ufba.br/LES/AntonioTerceiro">Antonio Terceiro (Federal University of Bahia,
+                Brazil)</a></li>
+        </ul>
+        <h3>Staff</h3>
+        <ul>
+            <li><a href="https://www.cs.ubc.ca/people/meghan-allen">Meghan Allen (Instructor, University of British Columbia)</a></li>
+            <li><a href="https://www.linkedin.com/in/robertelves">Robert Elves (Tasktop)</a></li>
+            <li>William Ono</li>
+        </ul>
+    </div>
+
+
+    <!--
+        <h2>Research Overview</h2>
+
+            <div style="display: flex;">
+                <img style="display: flex; height: 125px; width: 125px" src="img/code_square_people.png" alt="Dragon screenshot" />
+                <div style="display: flex; flex-direction: column; padding-left: 1em">
+
+                </div>
+            </div>
+            -->
+
+
+</div>
+<!-- End of Content Area -->
+<!-- Footer Area Unit Menu - Mobile Only -->
+<div id="ubc7-unit-alternate-navigation" class="navbar expand visible-phone" role="navigation">
+    <div class="navbar-inner expand">
+        <div class="container">
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="people.html">People</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <!--
+                                                <li class="dropdown">
+                                                    <div class="btn-group">
+                                                        <a class="btn" href="http://www.ubc.ca/">Dropdown</a>
+                                                        <button class="btn dropdown-toggle" data-toggle="dropdown"><span class="ubc7-arrow blue down-arrow"></span></button>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a href="#">Action</a></li>
+                                                            <li><a href="#">Another action</a></li>
+                                                            <li><a href="#">Something else</a></li>
+                                                            <li class="nav-header">Navigation header</li>
+                                                            <li><a href="#">Separated link</a></li>
+                                                            <li><a href="#">One more separated link</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                    -->
+                </ul>
+            </div><!-- /.nav-collapse -->
+        </div>
+    </div><!-- /navbar-inner -->
+</div><!-- /navbar -->
+<!-- End of Footer Area Unit Menu -->
+<footer id="ubc7-footer" class="expand" role="contentinfo">
+    <div class="row-fluid expand" id="ubc7-unit-footer">
+        <div class="span10" id="ubc7-unit-address">
+            <div id="ubc7-address-name">Software Practices Lab</div>
+            <div id="ubc7-address-unit-name">Department of Computer Science</div>
+            <div id="ubc7-address-campus">Vancouver Campus</div>
+            <div id="ubc7-address-street">201 - 2366 Main Mall</div>
+            <div id="ubc7-address-location">
+                <span id="ubc7-address-city">Vancouver</span>, <span id="ubc7-address-province">BC</span> <span
+                    id="ubc7-address-country">Canada</span> <span id="ubc7-address-postal">V6T 1Z4</span>
+            </div>
+        </div>
+        <!--
+                    <div class="span2">
+                        <strong>Find me on</strong>
+                        <div id="ubc7-unit-social-icons">
+                            <a href="https://twitter.com/reid_holmes/"><i class="icon-twitter-sign"></i></a>
+                        </div>
+                    </div>
+        -->
+    </div>
+    <div class="row-fluid expand ubc7-back-to-top">
+        <div class="span2">
+            <a href="#">Back to top
+                <div class="ubc7-arrow up-arrow grey"></div>
+            </a>
+        </div>
+    </div>
+    <div class="row-fluid expand" id="ubc7-global-footer">
+        <div class="span5" id="ubc7-signature"><a href="http://www.ubc.ca/">The University of British Columbia</a>
+        </div>
+        <div class="span7" id="ubc7-footer-menu">
+        </div>
+    </div>
+    <div class="row-fluid expand" id="ubc7-minimal-footer">
+        <div class="span12">
+            <ul>
+                <li><a href="//cdn.ubc.ca/clf/ref/emergency">Emergency Procedures</a> <span class="divider">|</span>
+                </li>
+                <li><a href="//cdn.ubc.ca/clf/ref/terms">Terms of Use</a> <span class="divider">|</span></li>
+                <li><a href="//cdn.ubc.ca/clf/ref/copyright">Copyright</a> <span class="divider">|</span></li>
+                <li><a href="//cdn.ubc.ca/clf/ref/accessibility">Accessibility</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</div> <!-- /container -->
+<!-- Placed javascript at the end for faster loading -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="//cdn.ubc.ca/clf/7.0.4/js/ubc-clf.min.js"></script>
+</body>
+</html>
