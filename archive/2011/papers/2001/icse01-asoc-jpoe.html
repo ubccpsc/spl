@@ -1,0 +1,84 @@
+<HEAD>
+<TITLE>
+Separating Crosscutting Concerns Across the Lifecycle: From
+Composition Patterns to AspectJ and Hyper/J
+</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#cc0000" ALINK="#ff3300" VLINK="#000088">
+<center>
+[<a href="../index.html">Publications</a>] [<a href="../../index.html">Software&nbsp;Engineering&nbsp;Research&nbsp;Group</a>] [<a href="../../../../index.html">Department&nbsp;of&nbsp;Computer&nbsp;Science</a>] [<a href="http://www.ubc.ca/">University&nbsp;of&nbsp;British&nbsp;Columbia</a>]
+</center>
+<hr noshade>
+
+<p><b><font size=+1>
+Separating Crosscutting Concerns Across the Lifecycle: From
+Composition Patterns to AspectJ and Hyper/J
+</font></b><br>
+
+<a href="http://www.cs.tcd.ie/Siobhan.Clarke">Siobh&aacute;n
+Clarke</a> and <a href="http://www.cs.ubc.ca/~walker/">Robert
+J. Walker</a>.
+
+<P>
+Technical report TCD-CS-2001-15, Department of Computer Science,
+Trinity College, Dublin, Ireland, and technical report <a
+href="../../../../cgi-bin/tr/2001/TR-2001-05"
+target=_parent>UBC-CS-TR-2001-05</a>, <a href="../../../../index.html"
+target=_parent>Department of Computer Science</a>, <a
+href="http://www.ubc.ca/" target=_parent>University of British
+Columbia</a>, Vancouver, Canada, 23&nbsp;May 2001.
+
+<P>
+<a href="icse01-asoc-jpoe.pdf" onMouseOver="window.status='Download full text in PDF format'; return true"><img alt="PDF"
+src="../../images/pdf.gif" align=center></a>
+&nbsp;&nbsp <a
+href="../../talks/2001/icse01-asoc-jpoe/index.htm" onMouseOver="window.status='View the slides from the talk'; return true"><img alt="Slides from talk" src="../../images/slides.gif" align=center></a>
+
+<P>
+
+<H4>Abstract</H4>
+
+Implicit context is a recently introduced mechanism for improving
+source code structure, making components more reusable, and making
+their systems more evolvable.  It worries about eliminating
+locally-unneeded knowledge of external components (<em>extraneous
+embedded knowledge</em>, or <em>EEK</em>).  Aspect-oriented
+programming (AOP) is a separation of concerns mechanism.  It worries
+about separating and encapsulating functionality that crosscuts the
+components of a system.  AspectJ is a prototype AOP language.
+
+<p>Both approaches can be seen to manipulate software at
+<em>joinpoints</em>, points in the execution or lexical description of
+that software.  Joinpoints and the related code to execute at them can
+be considered as an event-based system.  The exposure of events in
+AspectJ differs from that in implicit context---AspectJ considers
+these events as immediate and largely independent, while implicit
+context considers them as historic and interrelated through its
+\emph{call history} concept.  We give an example of a system in which
+limiting the description of the events of interest to those currently
+available in AspectJ results in an error-prone and hard-to-evolve
+implementation, but in which the use of call history would lead to a
+more reusable and robust implementation.  We also briefly examine the
+issue of EEK and its removal within this example.
+
+<P><HR NOSHADE>
+
+<FONT SIZE="-1"><SCRIPT LANGUAGE="JavaScript">
+<!--
+document.write( "Last modified: ", document.lastModified, ".<P>" )
+//-->
+</SCRIPT></FONT>
+
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0">
+<TR>
+<TD><FONT SIZE="-1">URL:&nbsp;</FONT></TD>
+<TD><I><FONT SIZE="-1">http://www.cs.ubc.ca/labs/se/papers/2001/icse-asoc-jpoe.html</FONT></I></TD>
+</TR>
+<TR>
+<TD><FONT SIZE="-1">File:&nbsp;</FONT></TD>
+<TD><I><FONT SIZE="-1">/pub/www/cs.ubc.ca/docs/labs/se/papers/2001/icse-asoc-jpoe.html</FONT></I></TD>
+</TR>
+</TABLE>
+
+</BODY>
+</HTML>

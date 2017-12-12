@@ -1,0 +1,147 @@
+<HEAD>
+<TITLE>
+UBC CS Software Engineering Research Group: Projects
+</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#cc0000" ALINK="#ff3300" VLINK="#000088">
+<center>
+[<a href="../index.html">Software&nbsp;Engineering&nbsp;Research&nbsp;Group</a>] [<a href="../../../index.html">Department&nbsp;of&nbsp;Computer&nbsp;Science</a>] [<a href="http://www.ubc.ca/">University&nbsp;of&nbsp;British&nbsp;Columbia</a>]
+</center>
+<hr noshade>
+
+<p><h2>Projects</h2>
+
+<P> Our research focuses on methods and tools to help software
+developers manage and evolve the structure of the software systems
+they are developing both at design time and in source code. In
+particular, we are working on approaches that help developers assess
+various design alternatives when performing a software engineering
+task.  Since new methods and tools have little value unless useful to
+"real" software developers, we are also working on assessment methods
+to understand how to better validate our research results.
+
+<P><H3>Design Aids and Approaches</H3>
+
+<P><I><FONT COLOR="#000088">Predicting Memory Use 
+(<A HREF="../../../~murphy/index.html">Murphy</A>,
+<A HREF="http://www.cs.ubc.ca/~cubranic">Cubranic</A>,
+Saenko).</FONT></I>
+Increasingly, new applications are being built by composing existing
+software components rather than by coding a system from scratch. Using
+this approach, applications can be built quickly. Far too often,
+however, these applications do not exhibit acceptable performance. The
+benefits of construction through composition could be more reliably
+achieved if a software engineer could assess the performance impact of
+a component prior to its use. We have done some initial investigations
+of a method to predict memory use for C++ components. We are currently
+working on prediciting memory use for Java components as part of <A
+HREF="http://www.cser.ca">CSER</A> in cooperation with <A
+HREF="http://www.oti.com">OTI, Inc.</A> (<A
+HREF="../papers/1998/wosp98-dynmem.html">Workshop Paper</A>)
+
+<P><I><FONT COLOR="#000088">Interaction-based Programming (<A
+HREF="http://www.cs.ubc.ca/~gslee">Lee</A>).</FONT></I>
+Interaction-based programming is an experimental approach aimed at
+improving the reusability of components by providing first-class
+language constructs---software interactions---to moderate
+communications between component interfaces. An interaction-based
+approach is being taken in the development of the RASP
+toolkit that supports the development of visual simualtions.
+
+<P><H3>Source Code Analysis</H3>
+
+<P><I><FONT COLOR="#000088">Exception Flow Analysis in Java
+(<A HREF="http://www.cs.ubc.ca/~mrobilla">Robillard</A>, 
+<A HREF="../../../~murphy/index.html">Murphy</A>).
+</FONT></I>Because of unchecked exceptions and of subsumption
+of exception types in method headers, it's difficult for
+programmers to reason about the flow of exceptions in Java programs.
+We have developed a static analysis to called <I>Jex</I>, to extract
+detailed exception flow information from Java programs.
+The main purpose of Jex is to help developers improve their
+error-handling code.
+(<A HREF="http://www.cs.ubc.ca/labs/se/papers/1999/UBC-CS-TR-99-02.html">Paper</A>)
+
+<P><I><FONT COLOR="#000088">Conceptual Modules 
+(Baniassad, 
+<A HREF="../../../~murphy/index.html">Murphy</A>).
+</FONT></I>  We have
+developed a tool, called the <I>conceptual module</I> tool, to help
+software developers extract components from existing systems.  This
+tool allows a developer to query source code in terms of components
+that do not conform to existing structures, such as procedures, in the
+code base.  This tool may have applications in software architecture
+and design conformance checking. 
+(<A HREF="../papers/1998/icse20-cm.html">Paper and Talk</A>)
+
+<P><I><FONT COLOR="#000088">Visualization (<A
+HREF="http://www.cs.ubc.ca/~walker">Walker</A>, <A
+HREF="../../../~murphy/index.html">Murphy</A>, and a bunch
+of OTI folks).
+</FONT></I> In
+cooperation with <A HREF="http://www.oti.com/">OTI Inc.</A> and <A
+HREF="http://www.cser.ca">CSER</A>, we are investigating techniques to
+visualize information about the execution of an object-oriented
+system.  The intent of this work is to find effective techniques to
+help software developers perform various software engineering tasks,
+such as improving the performance of a system. (<A
+HREF="../papers/1998/oopsla98-viz.html">Paper and Talk</A>)
+
+<P><I><FONT COLOR="#000088"><A NAME="ConcernGraphs">Concern Graphs </A>(<A HREF="http://www.cs.ubc.ca/~mrobilla">Robillard</a>, <A HREF="../../../~murphy/index.html">Murphy</a>)
+</FONT></I>
+A Concern Graph provides an abstract representation of a concern in a software system code. The representation abstracts the implementation details
+of a concern and makes explicit the relationships between  different parts
+of a concern. From the representation, there is an obvious
+and inexpensive mapping back to the source code.  The FEAT (Feature
+Exploration and Analysis) tool allows a developer to manipulate
+a concern representation extracted from a Java system, and to
+analyze the relationships of that concern to the code base. 
+(<A HREF="http://www.cs.ubc.ca/~mrobilla/papers/TR-2001-13.html">
+Paper: Concern Graphs - Finding and Describing Concerns using
+Structural Program Dependencies</a>)
+
+<P><H3>Assessment</H3>
+
+<P><I><FONT COLOR="#000088"><a name="AOPAssess">Aspect-oriented Programming
+Assessment</a>
+(Baniassad,
+<A HREF="../../../~murphy/index.html">Murphy</A>,
+<A HREf="http://www.cs.ubc.ca/~walker">Walker</A>)
+.</FONT></I> Software design and implementation approaches
+and development support tools are valuable only if a developer can
+effectively use them to build and maintain software products.  We are
+investigating case study and experimental methods by which software
+engineering researchers may evaluate claims made about new software
+engineering techniques and tools. Most of our work in this
+area has been in the context of early assessment of AOP. 
+(<A HREF="../papers/1999/oopsla99-atlas.html">Paper and Talk: Atlas - A Case Study
+in Buildling a Web-based Learning Environment using AOP</A>,
+<A
+HREF="../papers/1999/icse99-aop.html">Paper: An Initial Assessment
+of AOP</A>
+and <A HREF="../papers/1998/UBC-CS-TR-98-10.html">Paper: Evaluating
+Emerging Software Development Technologies: Lessons Learned through
+Assessing AOP </A>)
+
+
+<P><HR NOSHADE>
+
+<FONT SIZE="-1"><SCRIPT LANGUAGE="JavaScript">
+<!--
+document.write( "Last modified: ", document.lastModified, ".<P>" )
+//-->
+</SCRIPT></FONT>
+
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0">
+<TR>
+<TD><FONT SIZE="-1">URL:&nbsp;</FONT></TD>
+<TD><I><FONT SIZE="-1">http://www.cs.ubc.ca/labs/se/projects/index.html</FONT></I></TD>
+</TR>
+<TR>
+<TD><FONT SIZE="-1">File:&nbsp;</FONT></TD>
+<TD><I><FONT SIZE="-1">/pub/www/cs.ubc.ca/docs/labs/se/projects/index.html</FONT></I></TD>
+</TR>
+</TABLE>
+
+</BODY>
+</HTML>

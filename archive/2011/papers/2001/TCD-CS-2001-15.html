@@ -1,0 +1,95 @@
+<HEAD>
+<TITLE>
+Separating Crosscutting Concerns Across the Lifecycle: From
+Composition Patterns to AspectJ and Hyper/J
+</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#cc0000" ALINK="#ff3300" VLINK="#000088">
+<center>
+[<a href="../index.html">Publications</a>] [<a href="../../index.html">Software&nbsp;Engineering&nbsp;Research&nbsp;Group</a>] [<a href="../../../../index.html">Department&nbsp;of&nbsp;Computer&nbsp;Science</a>] [<a href="http://www.ubc.ca/">University&nbsp;of&nbsp;British&nbsp;Columbia</a>]
+</center>
+<hr noshade>
+
+<p><b><font size=+1>
+Separating Crosscutting Concerns Across the Lifecycle: From
+Composition Patterns to AspectJ and Hyper/J
+</font></b><br>
+
+<a href="http://www.cs.tcd.ie/Siobhan.Clarke">Siobh&aacute;n
+Clarke</a> and <a href="http://www.cs.ubc.ca/~walker/">Robert
+J. Walker</a>.
+
+<P>
+Technical report <a
+href="ftp://ftp.cs.tcd.ie/pub/tech-reports/reports.01/TCD-CS-2001-15.pdf">TCD-CS-2001-15</a>,
+<a href="http://www.cs.tcd.ie/">Department of Computer Science</a>, <a
+href="http://www.tcd.ie/">Trinity College, Dublin</a>, Ireland, and
+technical report <a
+href="../../../../cgi-bin/tr/2001/TR-2001-05"
+target=_parent>UBC-CS-TR-2001-05</a>, <a href="../../../../index.html"
+target=_parent>Department of Computer Science</a>, <a
+href="http://www.ubc.ca/" target=_parent>University of British
+Columbia</a>, Vancouver, Canada, 23&nbsp;May 2001.
+
+<P>
+<a href="TCD-CS-2001-15.pdf" onMouseOver="window.status='Download full text in PDF format'; return true"><img alt="PDF"
+src="../../images/pdf.gif" align=center></a>
+
+<P>
+
+<H4>Abstract</H4>
+
+Requirements that have a crosscutting impact on software (such as
+distribution or persistence) present many problems for software
+development that manifest themselves throughout the lifecycle.
+Inherent properties of crosscutting requirements, such as
+<em>scattering</em> (where their support is scattered across multiple
+classes) and <em>tangling</em> (where their support is tangled with
+elements supporting other requirements), reduce the reusability,
+extensibility, and traceability of the affected software artefacts.
+Scattering and tangling exist both in designs and code and must
+therefore be addressed in both.
+
+<p>To remove scattering and tangling properties, a means to separate
+the designs and code of crosscutting behaviour into independent models
+or programs is required.  This paper discusses approaches that achieve
+exactly that in either designs or code, and presents an investigation
+into a means to maintain this separation of crosscutting behaviour
+seamlessly across the lifecycle.  To achieve this, we work with
+<em>composition patterns</em> at the design level, <em>AspectJ</em>
+and <em>Hyper/J</em> at the code level, and investigate a mapping
+between the two levels.  Composition patterns are a means to separate
+the design of crosscutting requirements in an encapsulated,
+independent, reusable, and extensible way.  AspectJ and Hyper/J are
+technologies that provide similar levels of separation for Java code.
+We discuss each approach, and map the constructs from composition
+patterns to those of AspectJ and Hyper/J.  We first illustrate
+composition patterns with the design of the Observer pattern, and then
+map that design to the appropriate code.  As this is achieved with
+varying levels of success, the exercise also serves as a case study in
+using those implementation techniques.
+
+<P><B><a href="../superceded/index.html#TCD-CS-2001-15">Superceded
+versions of this paper</a></B>
+
+<P><HR NOSHADE>
+
+<FONT SIZE="-1"><SCRIPT LANGUAGE="JavaScript">
+<!--
+document.write( "Last modified: ", document.lastModified, ".<P>" )
+//-->
+</SCRIPT></FONT>
+
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0">
+<TR>
+<TD><FONT SIZE="-1">URL:&nbsp;</FONT></TD>
+<TD><I><FONT SIZE="-1">http://www.cs.ubc.ca/labs/se/papers/2001/TCD-CS-2001-15.html</FONT></I></TD>
+</TR>
+<TR>
+<TD><FONT SIZE="-1">File:&nbsp;</FONT></TD>
+<TD><I><FONT SIZE="-1">/pub/www/cs.ubc.ca/docs/labs/se/papers/2001/TCD-CS-2001-15.html</FONT></I></TD>
+</TR>
+</TABLE>
+
+</BODY>
+</HTML>

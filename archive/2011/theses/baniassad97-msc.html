@@ -1,0 +1,85 @@
+<HEAD>
+<TITLE>
+Elisa Baniassad's M.Sc. Thesis
+</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#cc0000" ALINK="#ff3300" VLINK="#000088">
+<center>
+[<a href="index.html">Theses</a>] [<a href="../index.html">Software&nbsp;Engineering&nbsp;Research&nbsp;Group</a>] [<a href="../../../index.html">Department&nbsp;of&nbsp;Computer&nbsp;Science</a>] [<a href="http://www.ubc.ca/">University&nbsp;of&nbsp;British&nbsp;Columbia</a>]
+</center>
+<hr noshade>
+
+<p><b><font size=+1>Conceptual Modules: Expressing Desired Structure for Software Reengineering
+</font></b>
+<P>
+Elisa L. A. Baniassad
+<P>
+M.Sc. thesis, University of British Columbia, December 1997.
+<P>
+<a href="baniassad97-msc.pdf" onMouseOver="window.status='Download full text in PDF format'; return true"><img alt="PDF"
+src="../images/pdf.gif" align=center></a>&nbsp;&nbsp;&nbsp; <a
+href="baniassad97-msc.ps.gz" onMouseOver="window.status='Download full text in gzipped PostScript format'; return true"><img alt="gzipped
+PostScript" src="../images/gzps.gif" align=center></a>
+
+<H4>Abstract</H4> Many tools have been built to analyze the source
+code of software systems.  Most of these tools do not adequately
+support software reengineering activities because they do not allow a
+software engineer to analyze both existing and desired software
+structures.
+
+This thesis describes the <I>conceptual modules</I> approach and
+supporting tool that aids the engineer in the investigation and
+analysis of desired structure with relation to the existing structure
+of source code. This approach allows a selected subset of lines of
+source to be treated as a logical unit.  This subset is referred to as
+a conceptual module.  The lines of code that comprise a conceptual
+module need not be contiguous, nor must they be related in any way in
+the source.  Using variable dependence and control transfer
+information extracted from the source, the tool analyzes the
+conceptual module's constituent lines of code to determine its
+interface.  Additionally, the data- or control-flow between two or
+more conceptual modules can be examined as a means of eliciting the
+relationships between the modules and between conceptual modules and
+the source.  To allow the necessary flexibility in analysis, the
+functionality of the tool can be tailored through a programmatic query
+language component.
+
+The usefulness of the tool has been investigated in two different
+ways.  First, the tool was applied to several different reengineering
+scenarios: restructuring from procedural to object-oriented program
+design, re-modularizing code in an existing program with little
+structure, and extracting a portion of source for reuse.  For each
+scenario, several existing program understanding tools were also
+applied to provide a basis of comparison between existing approaches
+and the conceptual modules approach.  Second, the tool was
+successfully applied to actual reengineering tasks by two different
+groups of users.  One group eliminated unnecessary parts of a system's
+source to improve efficiency and to enable parallelization of a 47,000
+line, 56-file software package.  The other group performed analysis on
+a procedural program so as to better understand how to transform the
+existing source into an object-oriented version.
+<P>
+
+&#169; Elisa L. A. Baniassad, 1997.
+
+<P><HR NOSHADE>
+
+<FONT SIZE="-1"><SCRIPT LANGUAGE="JavaScript">
+<!--
+document.write( "Last modified: ", document.lastModified, ".<P>" )
+//-->
+</SCRIPT></FONT>
+
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0">
+<TR>
+<TD><FONT SIZE="-1">URL:&nbsp;</FONT></TD>
+<TD><I><FONT SIZE="-1">http://www.cs.ubc.ca/labs/se/papers/1999/UBC-CS-TR-99-02.html</FONT></I></TD>
+</TR>
+<TR>
+<TD><FONT SIZE="-1">File:&nbsp;</FONT></TD>
+<TD><I><FONT SIZE="-1">/pub/www/cs.ubc.ca/docs/labs/se/papers/1999/UBC-CS-TR-99-02.html</FONT></I></TD>
+</TR>
+</TABLE>
+
+</BODY>
+</HTML>

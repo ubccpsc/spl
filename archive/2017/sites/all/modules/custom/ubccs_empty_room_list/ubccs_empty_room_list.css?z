@@ -1,0 +1,54 @@
+#ubccs_empty_room_list_table {
+  background: #fff;
+  border: 1px solid #ccc;
+  display: block;
+  left: 0;
+  width: 100%;
+  padding: .5em 1em;
+}
+#ubccs_empty_room_list_table h3 {
+  margin-top: 0;
+}
+#ubccs_empty_room_list_table ul li {
+  float: left;
+  width: 45%;
+}
+#ubccs-empty-room-list-form .form-item {
+  margin: 0;
+}
+#ubccs-empty-room-list-form label {
+  float: left;
+  padding: .15em .5em 0 0;
+}
+#ubccs-empty-room-list-form #startTime-wrapper label {
+  padding-right: .7em;
+}
+#ubccs-empty-room-list-form #endTime-wrapper label {
+  padding-right: 1.2em;
+}
+#edit-arriveon-datepicker-popup-0 {
+    position: relative;
+}
+#edit-arriveon-datepicker-popup-0, #startTime-wrapper, #endTime-wrapper {
+    width: 75%;
+}
+
+#invis
+{
+    display: none;
+}
+
+#ubccs-empty-room-list-form .description
+{
+  font-style: italic;
+  font-size: .9em;
+}
+
+#ubccs-empty-room-list-form .ahah-progress
+{
+    position: relative;
+    z-index: 2;
+    left: 0px;
+    width: 1px;
+    height: 1px;
+}

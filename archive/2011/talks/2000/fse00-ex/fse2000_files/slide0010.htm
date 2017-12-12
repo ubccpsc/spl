@@ -1,0 +1,175 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=PowerPoint.Slide>
+<meta name=Generator content="Microsoft PowerPoint 9">
+<title>Designing Robust Java Programs with Exceptions (FSE 2000)</title>
+<meta name=Description content="4-Dec-00: Compartments in Jex">
+<link rel=next href="slide0011.htm">
+<![if !ppt]>
+<script>
+<!--
+function Update()
+{
+  if( window.name == "PPTSld" )
+    parent.SlideUpdated('slide0010.htm');   
+  else
+    parent.location.href = "../fse2000.htm";
+}
+
+function NoHref() {}
+//-->
+</script>
+<![endif]>
+</head>
+
+<body background="slide0010_background.gif" bgcolor=white alink="#3333cc"
+link="#ccccff" vlink="#b2b2b2" text=black topmargin=0 leftmargin=0
+onload="Update()">
+
+<table border=0 valign=top width=475 height=356 cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=40 height=0 nowrap><img src="space.gif" border=0></td>
+  <td width=63 height=0 nowrap><img src="space.gif" border=0></td>
+  <td width=6 height=0 nowrap><img src="space.gif" border=0></td>
+  <td width=11 height=0 nowrap><img src="space.gif" border=0></td>
+  <td width=28 height=0 nowrap><img src="space.gif" border=0></td>
+  <td width=7 height=0 nowrap><img src="space.gif" border=0></td>
+  <td width=9 height=0 nowrap><img src="space.gif" border=0></td>
+  <td width=39 height=0 nowrap><img src="space.gif" border=0></td>
+  <td width=6 height=0 nowrap><img src="space.gif" border=0></td>
+  <td width=16 height=0 nowrap><img src="space.gif" border=0></td>
+  <td width=26 height=0 nowrap><img src="space.gif" border=0></td>
+  <td width=15 height=0 nowrap><img src="space.gif" border=0></td>
+  <td width=3 height=0 nowrap><img src="space.gif" border=0></td>
+  <td width=39 height=0 nowrap><img src="space.gif" border=0></td>
+  <td width=4 height=0 nowrap><img src="space.gif" border=0></td>
+  <td width=45 height=0 nowrap><img src="space.gif" border=0></td>
+  <td width=28 height=0 nowrap><img src="space.gif" border=0></td>
+  <td width=44 height=0 nowrap><img src="space.gif" border=0></td>
+  <td width=6 height=0 nowrap><img src="space.gif" border=0></td>
+ </tr>
+ <tr>
+  <td width=475 height=50 colspan=20></td>
+ </tr>
+ <tr>
+  <td width=120 height=24 colspan=4></td>
+  <td width=237 height=24 colspan=12>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=237 height=24 align=center><font face=Arial color="#3333cc"
+    size=4><b>Compartments in Jex</b></font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=118 height=24 colspan=4></td>
+ </tr>
+ <tr>
+  <td width=475 height=65 colspan=20></td>
+ </tr>
+ <tr>
+  <td width=209 height=14 colspan=9></td>
+  <td width=57 height=14 colspan=3>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=57 height=14 align=center><font face=Arial size=1>Controller</font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=209 height=14 colspan=8></td>
+ </tr>
+ <tr>
+  <td width=475 height=53 colspan=20></td>
+ </tr>
+ <tr>
+  <td width=109 height=14 colspan=3></td>
+  <td width=39 height=14 colspan=2>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=39 height=14 align=center><font face=Arial size=1>Parser</font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=77 height=14 colspan=5></td>
+  <td width=26 height=14>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=26 height=14 align=center><font face=Arial size=1>AST</font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=57 height=14 colspan=3></td>
+  <td width=77 height=14 colspan=3>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=77 height=14 align=center><font face=Arial size=1>Type System</font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=90 height=14 colspan=3></td>
+ </tr>
+ <tr>
+  <td width=475 height=54 colspan=20></td>
+ </tr>
+ <tr>
+  <td width=203 height=2 colspan=8></td>
+  <td width=66 height=14 colspan=5 rowspan=2>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=66 height=14 align=center><font face=Arial size=1>Jex Loader</font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=206 height=2 colspan=7></td>
+ </tr>
+ <tr>
+  <td width=103 height=12 colspan=2></td>
+  <td width=52 height=14 colspan=4 rowspan=2>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=52 height=14 align=center><font face=Arial size=1>Resolver</font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=48 height=12 colspan=2></td>
+  <td width=206 height=12 colspan=7></td>
+ </tr>
+ <tr>
+  <td width=103 height=2 colspan=2></td>
+  <td width=320 height=2 colspan=14></td>
+ </tr>
+ <tr>
+  <td width=475 height=37 colspan=20></td>
+ </tr>
+ <tr>
+  <td width=40 height=11></td>
+  <td width=80 height=11 colspan=3><img src="master03_image036.gif" border=0
+  width=80 height=11></td>
+  <td width=44 height=11 colspan=3></td>
+  <td width=148 height=19 colspan=8 rowspan=2><img src="master03_image037.gif"
+  border=0 width=148 height=19></td>
+  <td width=117 height=11 colspan=3></td>
+  <td width=6 height=11><img src="master03_image038.gif" border=0 width=6
+  height=11></td>
+  <td width=40 height=11></td>
+ </tr>
+ <tr>
+  <td width=164 height=8 colspan=7></td>
+  <td width=163 height=8 colspan=5></td>
+ </tr>
+ <tr>
+  <td width=475 height=10 colspan=20></td>
+ </tr>
+</table>
+
+</body>
+
+</html>

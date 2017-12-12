@@ -1,0 +1,83 @@
+<HEAD>
+<TITLE>
+Analyzing Exception Flow in Java Programs
+</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#cc0000" ALINK="#ff3300" VLINK="#000088">
+<center>
+[<a href="../index.html">Publications</a>] [<a href="../../index.html">Software&nbsp;Engineering&nbsp;Research&nbsp;Group</a>] [<a href="../../../../index.html">Department&nbsp;of&nbsp;Computer&nbsp;Science</a>] [<a href="http://www.ubc.ca/">University&nbsp;of&nbsp;British&nbsp;Columbia</a>]
+</center>
+<hr noshade>
+
+<p><b><font size=+1>Analyzing Exception Flow in Java Programs
+</font></b><br>
+
+<a href="http://www.cs.ubc.ca/~mrobilla/">Martin P. Robillard</a> and <a
+href="../../../../~murphy/index.html">Gail C. Murphy</a>
+
+<P>In O. Nierstrasz and M. Lemoine, editors, <em>Software
+Engineering---ESEC/FSE'99</em>, (Proceedings of the <a
+href="http://www.cert.fr/anglais/dprs/esec99.html">7th European
+Software Engineering Conference and 7th ACM SIGSOFT Symposium on the
+Foundations of Software Engineering</a>; Toulouse, France;
+6--10&nbsp;September 1999), volume 1687 of <em>Lecture Notes in
+Computer Science</em>, pages 322-337. Springer, 1999.
+
+<P>
+<a href="esecfse99-aef.pdf" onMouseOver="window.status='Download full text in PDF format'; return true"><img alt="PDF"
+src="../../images/pdf.gif" align=center></a>&nbsp;&nbsp;
+<a href="http://www.cs.ubc.ca/labs/se/talks/1999/esecfse99/index.htm" onMouseOver="window.status='View the slides from the talk'; return true"><img alt="Slides from talk" src="../../images/slides.gif" align=center></a>
+
+<P>
+<!-- Note: The following link is required by the copyright agreement-->
+Copyright Springer-Verlag.  <A HREF="http://www.springer.de/comp/lncs/index.html">LNCS Series homepage</A>.
+
+<H4>Abstract</H4>
+
+Exception handling mechanisms provided by programming languages are
+intended to ease the difficulty of developing robust software systems.
+Using these mechanisms, a software developer can describe the
+exceptional conditions a module might raise, and the response of the
+module to exceptional conditions that may occur as it is executing.
+Creating a robust system from such a localized view requires a
+developer to reason about the flow of exceptions across modules. The
+use of unchecked exceptions, and in object-oriented languages,
+subsumption, makes it difficult for a software developer to perform
+this reasoning manually.  In this paper, we describe a tool called Jex
+that analyzes the flow of exceptions in Java code to produce views of
+the exception structure. We demonstrate how Jex can help a developer
+identify program points where exceptions are caught accidentally,
+where there is an opportunity to add finer-grained recovery code, and
+where error-handling policies are not being followed.
+
+<P><B><a href="../superceded/index.html#esecfse99-aef">Superceded versions of this
+paper</a></B>
+
+<!--<P><HR>
+
+<P><em>IEEE Copyright Notice: This work has been submitted to the IEEE
+for possible publication.  Copyright may be transferred without
+notice, after which this version may no longer be accessible.</em>
+//-->
+
+<P><HR NOSHADE>
+
+<FONT SIZE="-1"><SCRIPT LANGUAGE="JavaScript">
+<!--
+document.write( "Last modified: ", document.lastModified, ".<P>" )
+//-->
+</SCRIPT></FONT>
+
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0">
+<TR>
+<TD><FONT SIZE="-1">URL:&nbsp;</FONT></TD>
+<TD><I><FONT SIZE="-1">http://www.cs.ubc.ca/labs/se/papers/1999/esecfse99-aef.html</FONT></I></TD>
+</TR>
+<TR>
+<TD><FONT SIZE="-1">File:&nbsp;</FONT></TD>
+<TD><I><FONT SIZE="-1">/pub/www/cs.ubc.ca/docs/labs/se/papers/1999/esecfse99-aef.html</FONT></I></TD>
+</TR>
+</TABLE>
+
+</BODY>
+</HTML>

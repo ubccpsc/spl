@@ -1,0 +1,41 @@
+
+div.views-admin-links,
+div.block-edit-link,
+div.node-edit-link,
+div.block-edit-link a,
+div.node-edit-link a {
+  font-size: 9px;
+  text-decoration: none;
+  background: transparent;
+}
+
+div.views-admin-links,
+div.block-edit-link,
+div.node-edit-link {  
+  padding: 2px 3px 1px 0;
+  position: absolute;
+  z-index: 20;
+  margin-top: -15px;
+}
+
+div.block-edit-link a,
+div.node-edit-link a,
+div.view div.views-admin-links-hover a,
+div.view div.views-admin-links:hover a {
+  color: #ccc;
+}
+
+div.node-edit-link ul.links li a:hover,
+div.node-edit-link ul.links li a:active,
+div.block-edit-link ul.links li a:hover,
+div.block-edit-link ul.links li a:active,
+div.view div.views-admin-links a:hover,
+div.view div.views-admin-links a:active {
+  color: #000;
+}
+
+div.block-views div.views-hide,
+div.view div.views-admin-links {
+  margin-right: 0;
+  width: auto;
+}

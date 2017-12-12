@@ -1,0 +1,187 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=PowerPoint.Slide>
+<meta name=Generator content="Microsoft PowerPoint 9">
+<title>Designing Robust Java Programs with Exceptions (FSE 2000)</title>
+<meta name=Description content="4-Dec-00: Benefits of Compartmenting">
+<link rel=next href="slide0016.htm">
+<![if !ppt]>
+<script>
+<!--
+function Update()
+{
+  if( window.name == "PPTSld" )
+    parent.SlideUpdated('slide0015.htm');   
+  else
+    parent.location.href = "../fse2000.htm";
+}
+
+function NoHref() {}
+//-->
+</script>
+<![endif]>
+</head>
+
+<body background="master03_background.gif" bgcolor=white alink="#3333cc"
+link="#ccccff" vlink="#b2b2b2" text=black topmargin=0 leftmargin=0
+onload="Update()">
+
+<table border=0 valign=top width=475 height=356 cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=40 height=0 nowrap><img src="space.gif" border=0></td>
+  <td width=42 height=0 nowrap><img src="space.gif" border=0></td>
+  <td width=38 height=0 nowrap><img src="space.gif" border=0></td>
+  <td width=44 height=0 nowrap><img src="space.gif" border=0></td>
+  <td width=148 height=0 nowrap><img src="space.gif" border=0></td>
+  <td width=83 height=0 nowrap><img src="space.gif" border=0></td>
+  <td width=29 height=0 nowrap><img src="space.gif" border=0></td>
+  <td width=12 height=0 nowrap><img src="space.gif" border=0></td>
+  <td width=9 height=0 nowrap><img src="space.gif" border=0></td>
+ </tr>
+ <tr>
+  <td width=475 height=50 colspan=10></td>
+ </tr>
+ <tr>
+  <td width=82 height=24 colspan=2></td>
+  <td width=313 height=24 colspan=4>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=313 height=24 align=center><font face=Arial color="#3333cc"
+    size=4><b>Benefits of Compartmenting</b></font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=80 height=24 colspan=4></td>
+ </tr>
+ <tr>
+  <td width=475 height=32 colspan=10></td>
+ </tr>
+ <tr>
+  <td width=40 height=192></td>
+  <td width=405 height=192 colspan=8>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=18 height=0 nowrap><img src="space.gif" border=0></td>
+    <td width=1 height=0 nowrap><img src="space.gif" border=0></td>
+    <td width=5 height=0 nowrap><img src="space.gif" border=0></td>
+    <td width=15 height=0 nowrap><img src="space.gif" border=0></td>
+    <td width=1 height=0 nowrap><img src="space.gif" border=0></td>
+    <td width=65 height=0 nowrap><img src="space.gif" border=0></td>
+    <td width=74 height=0 nowrap><img src="space.gif" border=0></td>
+    <td width=1 height=0 nowrap><img src="space.gif" border=0></td>
+    <td width=29 height=0 nowrap><img src="space.gif" border=0></td>
+    <td width=16 height=0 nowrap><img src="space.gif" border=0></td>
+    <td width=90 height=0 nowrap><img src="space.gif" border=0></td>
+    <td width=51 height=0 nowrap><img src="space.gif" border=0></td>
+    <td width=20 height=0 nowrap><img src="space.gif" border=0></td>
+   </tr>
+   <tr>
+    <td width=18 height=22><font face=Arial color=black size=3>•</font></td>
+    <td width=191 height=22 colspan=8><font face=Arial size=3>Global exception
+    flow:</font><br>
+    </td>
+    <td width=196 height=22 colspan=5></td>
+   </tr>
+   <tr>
+    <td width=405 height=4 colspan=14></td>
+   </tr>
+   <tr>
+    <td width=24 height=19 colspan=3></td>
+    <td width=15 height=19><font face=Arial color=black size=2>–</font></td>
+    <td width=327 height=19 colspan=8><font face=Arial size=2>Reduce
+    intra-compartment exception design</font><br>
+    </td>
+    <td width=39 height=19 colspan=2></td>
+   </tr>
+   <tr>
+    <td width=39 height=19 colspan=4></td>
+    <td width=66 height=19 colspan=2><font face=Arial size=2>problem.</font><br>
+    </td>
+    <td width=300 height=19 colspan=8></td>
+   </tr>
+   <tr>
+    <td width=405 height=4 colspan=14></td>
+   </tr>
+   <tr>
+    <td width=24 height=19 colspan=3></td>
+    <td width=15 height=19><font face=Arial color=black size=2>–</font></td>
+    <td width=276 height=19 colspan=7><font face=Arial size=2>Eliminate
+    unanticipated exceptions at</font><br>
+    </td>
+    <td width=90 height=19 colspan=3></td>
+   </tr>
+   <tr>
+    <td width=39 height=19 colspan=4></td>
+    <td width=141 height=19 colspan=4><font face=Arial size=2>compartment
+    level.</font><br>
+    </td>
+    <td width=225 height=19 colspan=6></td>
+   </tr>
+   <tr>
+    <td width=405 height=4 colspan=14></td>
+   </tr>
+   <tr>
+    <td width=18 height=22><font face=Arial color=black size=3>•</font></td>
+    <td width=207 height=22 colspan=9><font face=Arial size=3>New exception
+    sources:</font><br>
+    </td>
+    <td width=180 height=22 colspan=4></td>
+   </tr>
+   <tr>
+    <td width=405 height=4 colspan=14></td>
+   </tr>
+   <tr>
+    <td width=24 height=19 colspan=3></td>
+    <td width=15 height=19><font face=Arial color=black size=2>–</font></td>
+    <td width=366 height=19 colspan=10><font face=Arial size=2>Guidelines to
+    address but could not determine if it</font><br>
+    </td>
+   </tr>
+   <tr>
+    <td width=39 height=19 colspan=4></td>
+    <td width=347 height=19 colspan=9><font face=Arial size=2>allows to better
+    manage the emergence of new</font><br>
+    </td>
+    <td width=19 height=19></td>
+   </tr>
+   <tr>
+    <td width=39 height=19 colspan=4></td>
+    <td width=140 height=19 colspan=3><font face=Arial size=2>exception
+    sources.</font><br>
+    </td>
+    <td width=226 height=19 colspan=7></td>
+   </tr>
+  </table>
+  </td>
+  <td width=30 height=192></td>
+ </tr>
+ <tr>
+  <td width=475 height=29 colspan=10></td>
+ </tr>
+ <tr>
+  <td width=40 height=11></td>
+  <td width=80 height=11 colspan=2><img src="master03_image068.gif" border=0
+  width=80 height=11></td>
+  <td width=44 height=11></td>
+  <td width=148 height=19 rowspan=2><img src="master03_image069.gif" border=0
+  width=148 height=19></td>
+  <td width=112 height=11 colspan=2></td>
+  <td width=12 height=11><img src="master03_image070.gif" border=0 width=12
+  height=11></td>
+  <td width=39 height=11 colspan=2></td>
+ </tr>
+ <tr>
+  <td width=164 height=8 colspan=4></td>
+  <td width=163 height=8 colspan=5></td>
+ </tr>
+ <tr>
+  <td width=475 height=10 colspan=10></td>
+ </tr>
+</table>
+
+</body>
+
+</html>

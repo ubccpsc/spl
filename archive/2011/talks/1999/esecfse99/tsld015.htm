@@ -1,0 +1,70 @@
+
+<HTML>
+
+<HEAD>
+<META HTTP-EQUIV="Context-Type" CONTEXT="text/html;charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft Internet Assistant for PowerPoint 97">
+ <TITLE>Unanticipated Exceptions</TITLE> 
+</HEAD>
+
+<BODY     >
+
+ <H1>Unanticipated Exceptions</H1> 
+ <P><UL>
+<H2>public static void main( String[] args )
+</H2>
+<BR></UL><UL>
+<H2>{
+</H2>
+</UL><UL>
+<H2>	try
+</H2>
+</UL><UL>
+<H2>	{
+</H2>
+</UL><UL>
+<H2>	    Class myClass = Class.forName( args[0] );
+</H2>
+</UL><UL>
+<H2>	    FileInputStream file = 
+</H2>
+</UL><UL>
+<H2>		  new FileInputStream( myClass.getName() + ".class" );
+</H2>
+</UL><UL>
+<H2>	}
+</H2>
+</UL><UL>
+<H2>	catch( Exception e )
+</H2>
+</UL><UL>
+<H2>	{
+</H2>
+</UL><UL>
+<H2>	    System.out.println( "Can't open: ” + args[0] );
+</H2>
+</UL><UL>
+<H2>	}
+</H2>
+</UL><UL>
+<H2>}</H2>
+</UL></P>
+<P><UL>
+ClassNotFoundException<BR></UL></P>
+<P><UL>
+IOException<BR></UL></P>
+<P></P> 
+<P>
+<TABLE>
+  <TD HEIGHT=100 WIDTH=100> <A HREF="tsld014.htm">Previous slide</A> </TD>
+  <TD HEIGHT=100 WIDTH=100> <A HREF="tsld016.htm">Next slide</A> </TD>
+  <TD HEIGHT=100 WIDTH=150> <A HREF="tsld001.htm">Back to first slide</A> </TD>
+  <TD HEIGHT=100 WIDTH=150> <A HREF="sld015.htm">View graphic version</A> </TD>
+</TABLE>
+<BR>
+</P>
+
+
+
+</Body>
+</HTML>
