@@ -119,3 +119,12 @@ p {
     display: none;
     padding-left: 2em;
 }
+
+#bobs-club {
+    background: #fff;
+    border-top: 1px solid #D7E0E7;
+    border-bottom: 1px solid #D7E0E7;
+    color: #002145;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
