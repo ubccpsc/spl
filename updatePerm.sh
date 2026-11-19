@@ -1,5 +1,7 @@
 #!/bin/bash
-find . -type d -exec chmod 0755 {} \;
-find . -type f -exec chmod 0644 {} \;
-chmod 700 updatePerm.sh
 
+set -euo pipefail
+cd "$(dirname "$0")"
+
+find . -type d ! -perm 0755 -exec chmod 0755 {} +
+find . -type f ! -path ./updatePerm.sh ! -perm 0644 -exec chmod 0644 {} +
